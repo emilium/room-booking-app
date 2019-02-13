@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "Room Booking Application",
   "scripts": {
-    "build": "rm -rf dist/* && node ./rba build ./demo-config/config.json dist",
+    "build": "rimraf  dist/* && node ./rba build ./demo-config/config.json dist",
     "start": "node ./rba dev ./demo-config/config.json",
     "lint": "eslint webpack.config.* src tools rba",
     "lint:sass": "stylelint 'src/**/*.scss'",
